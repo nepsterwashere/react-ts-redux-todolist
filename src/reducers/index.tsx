@@ -1,6 +1,8 @@
 import { combineReducers } from "redux";
 import { todoReducer } from "./TodoReducer";
+import { visibilityReducer } from "./VisibilityReducer";
 
 export const rootReducer = combineReducers({
-    todos: todoReducer
+    todoState: todoReducer,
+    visibilityState: visibilityReducer
 });

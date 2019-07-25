@@ -1,5 +1,6 @@
 import { createStore} from 'redux';
-import { rootReducer } from '../reducers/index';
+import { rootReducer } from '../reducers';
+import { VisibilityFilter } from '../constants';
 
 export const store = createStore(
     rootReducer,
@@ -8,11 +9,20 @@ export const store = createStore(
 );
 
 export interface Todo {
-    id: number
-    text: string
-    completed: boolean
+    id: number;
+    text: string;
+    completed: boolean;
 }
 
 export interface TodoState {
-    todos: Array<Todo>
+    todos: Array<Todo>;
+}
+
+export interface VisibilityState {
+    filter: VisibilityFilter
+}
+
+export interface AppState {
+    todoState: TodoState; 
+    visibilityState: VisibilityState;
 }

@@ -8,7 +8,7 @@ interface Props {
 }
 
 const AddTodo: React.FC<Props> = ({ dispatch }) => {
-    let input: any;
+    let input: HTMLInputElement;
     return (
         <form onSubmit={(event: React.FormEvent<HTMLFormElement>) => {
             event.preventDefault();
