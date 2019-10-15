@@ -1,27 +1,7 @@
-# Redux Todolist - TypeScript
+# React Redux Todolist written with TypeScript
 
 TypeScript implementation of the Redux todolist tutorial
-
-## Intstalling
-
-First clone the Github repository.
-
-Install the needed dependencies
-
-```
-npm install
-```
-```
-yarn install
-```
-
-After that run the programm
-
-```
-npm start
-```
-```
-yarn start
-```
+This is nearly the exact implementation of the Redux JavaScript
+Todolist implementation.
 
 ## Have fun
